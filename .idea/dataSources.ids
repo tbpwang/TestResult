@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @localhost" uuid="4c4edf1e-6605-4690-a0c5-fd9cfd48bdea">
+    <database-info product="MySQL" version="5.7.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="conferenceroom">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="db_bookcase"/>
+      <schema id="3" name="db_dict"/>
+      <schema id="4" name="db_health"/>
+      <schema id="5" name="db_ip"/>
+      <schema id="6" name="db_springouting"/>
+      <schema id="7" name="exam"/>
+      <schema id="8" name="examination"/>
+      <schema id="9" name="information_schema"/>
+      <schema id="10" name="message"/>
+      <schema id="11" name="mysql"/>
+      <schema id="12" name="performance_schema"/>
+      <schema id="13" name="sakila"/>
+      <schema id="14" name="supermarket"/>
+      <schema id="15" name="sys"/>
+      <schema id="16" name="world"/>
+      <schema id="17" name="practice"/>
+      <table id="18" parent="1" name="rent"/>
+      <table id="19" parent="1" name="room"/>
+      <column id="20" parent="18" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="21" parent="18" name="roomId">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="22" parent="18" name="status">
+        <data-type>varchar(8)|0</data-type>
+        <default-expression>&apos;外部&apos;</default-expression>
+      </column>
+      <column id="23" parent="18" name="date">
+        <data-type>date|0</data-type>
+      </column>
+      <key id="24" parent="18" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="19" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="26" parent="19" name="name">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="27" parent="19" name="price">
+        <data-type>decimal(10)|0</data-type>
+      </column>
+      <key id="28" parent="19" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
