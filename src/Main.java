@@ -28,7 +28,7 @@ public class Main {
         for (int r = 0; r < n; r++) {
             triangle[r] = new int[r+1];
             for (int j = 0; j <= r; j++) {
-                if (r == 0 || r == 1 || j == 0 || j == r) {
+                if (j == 0 || j == r) {
                     triangle[r][j] = 1;
                 } else {
                     triangle[r][j] = triangle[r-1][j] + triangle[r-1][j-1];
